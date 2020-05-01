@@ -3,7 +3,7 @@
 // passed, it should return the number 1.
 function multiMultiply(...args) {
   if(args.some(value => typeof(value) !== "number")) {
-    return false;
+ 
   }
 
   if(args.length > 0) {
