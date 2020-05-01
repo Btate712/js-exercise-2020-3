@@ -10,7 +10,7 @@ Fork and clone this repository and run the command "npm install" to install all 
 ## Exercise:
 
 Read the comments for each function in the file functions.js and write the code required to make
-each function return the appropriate value without modifying the original array.
+each function return the appropriate value.
 
 ## Running the tests
 
