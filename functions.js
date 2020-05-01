@@ -35,6 +35,17 @@ function findAll(array, ...args) {
   }
 }
 
+// numsToWords accepts any number of integer parameters between 0 and 9 and returns
+// an array of each of those integers converted into a string which is the word representation
+// of the number (e.g. 1 becomes "one"). If no arguments are passed, an empty array should be 
+// returned.
+function numsToWords(...args) {
+  const words = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+
+  return args.map(number => words[number]);
+}
+
 exports.multiMultiply = multiMultiply;
 exports.findAny = findAny;
 exports.findAll = findAll;
+exports.numsToWords = numsToWords;

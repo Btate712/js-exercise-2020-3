@@ -57,3 +57,31 @@ test("findAll() should return true for multiple search parameters if all of thos
 test("findAll() should return false for multiple search parameters if any of those parameters are not found", () => {
   expect(functions.findAll([1,2,3,4,5], 1,2,9)).toBe(false);
 });
+
+test("numsToWords() should return an array when a number is passed", () => {
+  expect(Array.isArray(functions.numsToWords(2))).toBe(true);
+});
+
+test("numsToWords() should return an array with a single element when a single number is passed", () => {
+  expect(functions.numsToWords(2).length).toBe(1);
+});
+
+test("numsToWords() should return an array with a single element containing a string when a single number is passed", () => {
+  expect(typeof(functions.numsToWords(2))[0]).toBe("string");
+});
+
+test("numsToWords() should return an a string representation of a number when that number is passed", () => {
+  expect(functions.numsToWords(1)).toEqual(["one"]);
+});
+
+test("numsToWords() should return an array with length equal to the number of parameters passed", () => {
+  expect(functions.numsToWords(1,2,3,4).length).toBe(4);
+});
+
+test("numsToWords() should return an arry of string representations when multiple parameters are passed", () => {
+  expect(functions.numsToWords(0,1,2,3,4,5,6,7,8,9)).toEqual(["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"])
+});
+
+test("numsToWords() should return an empty array when no parameters are passed", () => {
+  expect(functions.numsToWords()).toEqual([]);
+});
