@@ -1,0 +1,23 @@
+{
+  "name": "js-exercises-2020-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "functions.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Btate712/js-exercises-2020-3.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Btate712/js-exercises-2020-3/issues"
+  },
+  "homepage": "https://github.com/Btate712/js-exercises-2020-3#readme",
+  "dependencies": {
+    "jest": "^25.5.3"
+  }
+}
